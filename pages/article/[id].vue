@@ -53,11 +53,13 @@
        </el-scrollbar>
      </div>
      <div class="p-2 flex justify-center">
-     <UPagination v-model="page" size="lg" :page-count="articleData.per_page" :total="articleData.total" />{{ page }}
+     <UPagination v-model="page" size="lg" :page-count="articleData.per_page" :total="articleData.total" />
      </div>
     </div>
  </template>
  <script setup lang="ts">
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
  import { ref, onMounted } from "vue"
  import { ElMessage } from "element-plus";
  const route = useRoute()
@@ -70,6 +72,7 @@
  const page = ref(+(pageId?.match?.(/pp(\d+)/)?.[1]) || 1)
  const pageIndexPrex = '76-0'
  async function fetchData() {
+   process.client && NProgress.start()
    const paramId = pageId === '1' ? pageIndexPrex :  pageId
    const { data, error } = await useFetch("/api/article", {
      query: {
@@ -84,7 +87,7 @@
      movieList.value = discoverArticleData?.list || [];
      articleData.value = discoverArticleData
    }
-   
+   process.client && NProgress.done()
  }
 
  watch(page, (newVal) => {
@@ -107,6 +110,7 @@
  
  
  <style lang="less" scoped>
+
  .time {
    font-size: 12px;
    color: #999;

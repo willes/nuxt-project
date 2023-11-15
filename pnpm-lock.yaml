@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@nuxt/ui':
     specifier: ^2.10.0
-    version: 2.10.0(axios@1.6.1)(vue@3.3.8)(webpack@5.89.0)
+    version: 2.10.0(axios@1.6.1)(nprogress@0.2.0)(vue@3.3.8)(webpack@5.89.0)
   '@nuxtjs/axios':
     specifier: ^5.13.6
     version: 5.13.6
@@ -20,9 +20,9 @@ dependencies:
   axios:
     specifier: ^1.6.1
     version: 1.6.1
-  chimee-player:
-    specifier: ^1.4.9
-    version: 1.4.9
+  nprogress:
+    specifier: ^0.2.0
+    version: 0.2.0
   nsplayer:
     specifier: ^0.7.0
     version: 0.7.0(@newstudios/common@0.2.2)
@@ -351,14 +351,6 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.3)
     dev: true
-
-  /@babel/runtime-corejs2@7.23.2:
-    resolution: {integrity: sha512-lTwRWGcAUBANnxD0A4c5/wKQ0eLhgdAy9kdY2rzTmmliumBQ8u8awykMnaQAnZR3PC47jLRjGoj+hozZqy9Bww==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      core-js: 2.6.12
-      regenerator-runtime: 0.14.0
-    dev: false
 
   /@babel/runtime@7.23.2:
     resolution: {integrity: sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==}
@@ -1383,7 +1375,7 @@ packages:
   /@nuxt/ui-templates@1.3.1:
     resolution: {integrity: sha512-5gc02Pu1HycOVUWJ8aYsWeeXcSTPe8iX8+KIrhyEtEoOSkY0eMBuo0ssljB8wALuEmepv31DlYe5gpiRwkjESA==}
 
-  /@nuxt/ui@2.10.0(axios@1.6.1)(vue@3.3.8)(webpack@5.89.0):
+  /@nuxt/ui@2.10.0(axios@1.6.1)(nprogress@0.2.0)(vue@3.3.8)(webpack@5.89.0):
     resolution: {integrity: sha512-pMv0BWWkeUOAJ+YkXr6xirbg2iHXKerIk9hYS7blp0aBehBTBq1gxHdtl+iA2hq9+LFahO6WyA7SJnw3h0thvQ==}
     engines: {node: '>=v16.20.2'}
     dependencies:
@@ -1400,7 +1392,7 @@ packages:
       '@tailwindcss/forms': 0.5.7(tailwindcss@3.3.5)
       '@tailwindcss/typography': 0.5.10(tailwindcss@3.3.5)
       '@vueuse/core': 10.6.1(vue@3.3.8)
-      '@vueuse/integrations': 10.6.1(axios@1.6.1)(fuse.js@6.6.2)(vue@3.3.8)
+      '@vueuse/integrations': 10.6.1(axios@1.6.1)(fuse.js@6.6.2)(nprogress@0.2.0)(vue@3.3.8)
       '@vueuse/math': 10.6.1(vue@3.3.8)
       defu: 6.1.3
       fuse.js: 6.6.2
@@ -2354,7 +2346,7 @@ packages:
       vue: 3.3.8
     dev: true
 
-  /@vueuse/integrations@10.6.1(axios@1.6.1)(fuse.js@6.6.2)(vue@3.3.8):
+  /@vueuse/integrations@10.6.1(axios@1.6.1)(fuse.js@6.6.2)(nprogress@0.2.0)(vue@3.3.8):
     resolution: {integrity: sha512-mPDupuofMJ4DPmtX/FfP1MajmWRzYDv8WSaTCo8LQ5kFznjWgmUQ16ApjYqgMquqffNY6+IRMdMgosLDRZOSZA==}
     peerDependencies:
       async-validator: '*'
@@ -2399,6 +2391,7 @@ packages:
       '@vueuse/shared': 10.6.1(vue@3.3.8)
       axios: 1.6.1
       fuse.js: 6.6.2
+      nprogress: 0.2.0
       vue-demi: 0.14.6(vue@3.3.8)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -2825,13 +2818,6 @@ packages:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
     dev: true
 
-  /babel-runtime@6.26.0:
-    resolution: {integrity: sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==}
-    dependencies:
-      core-js: 2.6.12
-      regenerator-runtime: 0.11.1
-    dev: false
-
   /bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
     dev: true
@@ -3061,130 +3047,6 @@ packages:
     resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==}
     dev: true
 
-  /chimee-helper-dom@0.1.8:
-    resolution: {integrity: sha512-V6yVko4Iy7cWZvQ1FmsFMeo4qriz0oYHfgKQqFW6XpykIYS+bxzjJ/9MbXoDUlfqE469KJQf9mq6qvONwn8IxQ==}
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper-events: 0.1.0
-      chimee-helper-utils: 0.2.1
-      toxic-predicate-functions: 0.1.5
-    dev: false
-
-  /chimee-helper-events@0.1.0:
-    resolution: {integrity: sha512-sdR2f0+QiT032BTcG/BS2IDY9/hxlv8dSenjwAXuiTzEsnTRRT6oC0tKXL3EdlhQgU35hULCBuEHEQetMCtIxw==}
-    dependencies:
-      babel-runtime: 6.26.0
-      toxic-predicate-functions: 0.1.5
-    dev: false
-
-  /chimee-helper-log@0.1.3:
-    resolution: {integrity: sha512-CCaQf3IyFOU7k4a50emdBzhn/aJ5TbTNtf7E0VIHRRMP/3zmK+xNkadu9LB9fXM7z/aNmWrjPgeqxbHIN+2XPA==}
-    dependencies:
-      babel-runtime: 6.26.0
-      toxic-predicate-functions: 0.1.5
-    dev: false
-
-  /chimee-helper-utils@0.2.1:
-    resolution: {integrity: sha512-8h2ISQMC3qb9SiRdxgPerThwPjMK9hyLYWCININNbj6DYy/bwC7jkMsaWsXh4QIMw1czuWVNt8w28m2SJoNKyg==}
-    dependencies:
-      babel-runtime: 6.26.0
-      toxic-predicate-functions: 0.1.5
-    dev: false
-
-  /chimee-helper@0.2.11:
-    resolution: {integrity: sha512-mLA02w9P5wf1qncJGw/GwjHrnGmrAp5OEKeOaNGGR0A9ZZ4sFuBoBO9xXlpAiRcoJXgGdpNrZK28lJ14cn3kfA==}
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper-dom: 0.1.8
-      chimee-helper-events: 0.1.0
-      chimee-helper-log: 0.1.3
-      chimee-helper-utils: 0.2.1
-      toxic-predicate-functions: 0.1.5
-      toxic-utils: 0.2.0
-      ua-parser-js: 0.7.37
-    dev: false
-
-  /chimee-kernel-flv@1.4.11:
-    resolution: {integrity: sha512-iOiQqAKPRF1HblUB4nx2EAIW+1E6ULcd8JtCBBQ1e9zlv0mRaTsQT7z9NBA8vD10p1hWR+tr+0/k7P8nVd1DBQ==}
-    dependencies:
-      babel-runtime: 6.26.0
-    dev: false
-
-  /chimee-kernel-hls@1.3.2:
-    resolution: {integrity: sha512-Johqdbaak4VJWuIP0NPYJTLHniy0sp/p77DDyotSt1o3yudoe5nYxOJt8EjYl2DLX/cvHvBmD+dNQhYk/Xkcqg==}
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper: 0.2.11
-      hls.js: 0.9.1
-      toxic-decorators: 0.3.8
-    dev: false
-
-  /chimee-player@1.4.9:
-    resolution: {integrity: sha512-95yvsFrpfN+njeUd2doboABWmmFPvPnTP59x+EMYzOqWPDC7ybSByDkNEMmzO08nUnFbmn3i60N2VZviO5bc9Q==}
-    dependencies:
-      chimee: 0.11.0
-      chimee-helper: 0.2.11
-      chimee-kernel-flv: 1.4.11
-      chimee-kernel-hls: 1.3.2
-      chimee-plugin-center-state: 0.0.14
-      chimee-plugin-contextmenu: 0.1.2
-      chimee-plugin-controlbar: 0.5.0
-      chimee-plugin-log: 0.0.4
-      chimee-plugin-popup: 0.0.8
-    dev: false
-
-  /chimee-plugin-center-state@0.0.14:
-    resolution: {integrity: sha512-j8FCnzCtE6NE/hveh11hF/JFaSVKFfcQXCZQaPEhhjS1N+pvOtiJiMw86FA9unHbygM+38I9d68HKQ5Pj1a6CQ==}
-    dependencies:
-      chimee-helper: 0.2.11
-      chimee-plugin-popup: 0.0.8
-    dev: false
-
-  /chimee-plugin-contextmenu@0.1.2:
-    resolution: {integrity: sha512-ogx0nhhMw1JR+Hrs62V39YX4JYAVqPoucyFc7gcw+Cn+3QJGR17vd6Y+rOuaEaO8a3algGTlzTqW99c9Qs9M7g==}
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper: 0.2.11
-      chimee-plugin-popup: 0.0.5
-    dev: false
-
-  /chimee-plugin-controlbar@0.5.0:
-    resolution: {integrity: sha512-Y8lFHNG4xIV5CqQOLh9mQKuJOaj+EiP4K/EXJra5vGDRssmTJELCTwJ7PX5Lu4oZ/gtOET14R90MfuxDkXwIjA==}
-    dependencies:
-      chimee-helper: github.com/Chimeejs/chimee-helper/73856ff8754e82c315a796e1b92eccc76780c352
-    dev: false
-
-  /chimee-plugin-log@0.0.4:
-    resolution: {integrity: sha512-GJnj21nSBixBhyYfpqTIqWJRGcmRmHpeHvHIVWJLlKnld7JOU3yE4HX1S5y1A0tW20gy41xS64EnsoDtDROS1A==}
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper: 0.2.11
-      chimee-plugin-popup: 0.0.5
-    dev: false
-
-  /chimee-plugin-popup@0.0.5:
-    resolution: {integrity: sha512-/wCzwgINxyFgt+TPvyJGiKpp1rnKRXvnxPWaQboa3gxsB4mPyrMvZqZOC4NZuSt29N/duR28nX7lhUv7MuWVLQ==}
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper: 0.2.11
-    dev: false
-
-  /chimee-plugin-popup@0.0.8:
-    resolution: {integrity: sha512-5fBIZGHfgVzlSgF8DlUbZuPdTNtOank6afWpvtxYPA9WJAsSIl4Tx65+kVTNCWvDwZ/02Hn95Fy3uyTzrx2rHw==}
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper: 0.2.11
-    dev: false
-
-  /chimee@0.11.0:
-    resolution: {integrity: sha512-QITnKapshtfuGV+x7OmO+tTxn81nyoyTtPd1q2+BbwqLjYzZfhVDGEYRmchInACXtI7DTwfaE6uuPhlSYMXsAQ==}
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper: 0.2.11
-      es-fullscreen: 0.3.0
-      toxic-decorators: 0.3.8
-    dev: false
-
   /chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
@@ -3382,12 +3244,6 @@ packages:
     dependencies:
       is-what: 3.14.1
     dev: true
-
-  /core-js@2.6.12:
-    resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
-    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
-    requiresBuild: true
-    dev: false
 
   /core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -3914,14 +3770,6 @@ packages:
   /error-stack-parser-es@0.1.1:
     resolution: {integrity: sha512-g/9rfnvnagiNf+DRMHEVGuGuIBlCIMDFoTA616HaP2l9PlCjGjVhD98PNbVSJvmK4TttqT5mV5tInMhoFgi+aA==}
     dev: true
-
-  /es-fullscreen@0.3.0:
-    resolution: {integrity: sha512-6YscjrBLLTYZvi9SMERz7HYy6ONlbYRVoAilMpeuTazXxzztaFV313u57fECCf4WwSjRGQCEFuYC2F/dsgd5Jg==}
-    dependencies:
-      babel-runtime: 6.26.0
-      toxic-decorators: 0.3.8
-      toxic-predicate-functions: 0.1.5
-    dev: false
 
   /es-module-lexer@1.4.1:
     resolution: {integrity: sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==}
@@ -4607,13 +4455,6 @@ packages:
 
   /highlight.js@10.7.3:
     resolution: {integrity: sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==}
-    dev: false
-
-  /hls.js@0.9.1:
-    resolution: {integrity: sha512-IklU+BgobPNIc6NMY+pyxElbwWKM7QmP2u0afB7KSK/1btAknTkDJmXasb4628EjgynjgDOVMmQ9sLg73S+lwQ==}
-    dependencies:
-      string.prototype.endswith: 0.2.0
-      url-toolkit: 2.2.5
     dev: false
 
   /hls.js@1.4.12:
@@ -6673,6 +6514,10 @@ packages:
       set-blocking: 2.0.0
     dev: true
 
+  /nprogress@0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
+    dev: false
+
   /nsplayer@0.7.0(@newstudios/common@0.2.2):
     resolution: {integrity: sha512-c2PBAjyvx2+uTE44/YDbuZZzSSVJTlohKrR/gHSOGB6rsP5s/sBbinloU8As2codZ4/mKmr39/8Nvw0Zxs3lXw==}
     peerDependencies:
@@ -7723,10 +7568,6 @@ packages:
       redis-errors: 1.2.0
     dev: true
 
-  /regenerator-runtime@0.11.1:
-    resolution: {integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==}
-    dev: false
-
   /regenerator-runtime@0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
     dev: false
@@ -8283,10 +8124,6 @@ packages:
       strip-ansi: 7.1.0
     dev: true
 
-  /string.prototype.endswith@0.2.0:
-    resolution: {integrity: sha512-CLb+YN1AleXLWyh88P1R5s2ajz83wF6bWOyxfOXJ7P3ioK/lOnA39VIEcen24/ELWJvU6y8NG6vEmWSOJIVFfQ==}
-    dev: false
-
   /string_decoder@1.1.1:
     resolution: {integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==}
     dependencies:
@@ -8549,48 +8386,6 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /toxic-decorators@0.3.8:
-    resolution: {integrity: sha512-YMf3RrQr8aTitGO3CgyCfFpsjreHBHHx45KBiPHJacb+5vZcCex3paBgSdgzW9DDVTMwZO6J+kiXwpeiyt/RZg==}
-    dependencies:
-      babel-runtime: 6.26.0
-      toxic-predicate-functions: 0.1.5
-      toxic-utils: 0.1.6
-    dev: false
-
-  /toxic-predicate-functions@0.1.5:
-    resolution: {integrity: sha512-CEXK9vd69LC3VDfqK3Ntb8sPYmfzDXI/4w7FE8uVbufOtGy3vt+h33fKUx21eI/c+F6O6NTcdoeWr91GJWXwNA==}
-    dependencies:
-      babel-runtime: 6.26.0
-    dev: false
-
-  /toxic-predicate-functions@0.2.5:
-    resolution: {integrity: sha512-+n1mK8dtW/vezk0ppziN/zSZUNhDGh2EsTajbL30rKTofpwRQrMkMdrWmJ4rzMTRDpFsqT+PXrJKlvV39TVOkw==}
-    dependencies:
-      '@babel/runtime': 7.23.2
-      lodash: 4.17.21
-    dev: false
-
-  /toxic-utils@0.1.6:
-    resolution: {integrity: sha512-Jm6nvMUx7E6rb3Fyw0y4im8wrNI1bsaVpjKLCtisgpDgwyxOWZCTbhzJjAQdu2ccctNopKlPzh2UgMHxCJIlCw==}
-    dependencies:
-      babel-runtime: 6.26.0
-      toxic-predicate-functions: 0.1.5
-    dev: false
-
-  /toxic-utils@0.2.0:
-    resolution: {integrity: sha512-3AFj4RS6sSTolHcE2dKlihvghxeUKb58r3wltHJYRtz6oRhxgl39TGvqpxeSo2uvbYvK0r8qV9spC932uY+0wg==}
-    dependencies:
-      babel-runtime: 6.26.0
-      toxic-predicate-functions: 0.1.5
-    dev: false
-
-  /toxic-utils@0.3.1:
-    resolution: {integrity: sha512-CKUVFFh8Zp8cmIAUrqWy9aXU2Tk1d4THH8+c49AmCTAbSQPIb0RD0xmoxqj7/r8/hIocS/A8uwVWI/BUn0iCmw==}
-    dependencies:
-      '@babel/runtime-corejs2': 7.23.2
-      lodash: 4.17.21
-    dev: false
-
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: true
@@ -8641,10 +8436,6 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.35
-
-  /ua-parser-js@0.7.37:
-    resolution: {integrity: sha512-xV8kqRKM+jhMvcHWUKthV9fNebIzrNy//2O9ZwWcfiBFR5f25XVZPLlEajk/sf3Ra15V92isyQqnIEXRDaZWEA==}
-    dev: false
 
   /ua-parser-js@1.0.37:
     resolution: {integrity: sha512-bhTyI94tZofjo+Dn8SN6Zv8nBDvyXTymAdM3LDI/0IboIUwTu1rEhW7v2TfiVsoYWgkQ4kOVqnI8APUFbIQIFQ==}
@@ -8974,10 +8765,6 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.1
-
-  /url-toolkit@2.2.5:
-    resolution: {integrity: sha512-mtN6xk+Nac+oyJ/PrI7tzfmomRVNFIWKUbG8jdYFt52hxbiReFAXIjYskvu64/dvuW71IcB7lV8l0HvZMac6Jg==}
-    dev: false
 
   /urlpattern-polyfill@8.0.2:
     resolution: {integrity: sha512-Qp95D4TPJl1kC9SKigDcqgyM2VDVO4RiJc2d4qe5GrYm+zbIQCWWKAFaJNQ4BhdFeDGwBmAxqJBwWSJDb9T3BQ==}
@@ -9512,18 +9299,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-  github.com/Chimeejs/chimee-helper/73856ff8754e82c315a796e1b92eccc76780c352:
-    resolution: {tarball: https://codeload.github.com/Chimeejs/chimee-helper/tar.gz/73856ff8754e82c315a796e1b92eccc76780c352}
-    name: chimee-helper
-    version: 0.2.11
-    dependencies:
-      babel-runtime: 6.26.0
-      chimee-helper-dom: 0.1.8
-      chimee-helper-events: 0.1.0
-      chimee-helper-log: 0.1.3
-      chimee-helper-utils: 0.2.1
-      toxic-predicate-functions: 0.2.5
-      toxic-utils: 0.3.1
-      ua-parser-js: 0.7.37
-    dev: false

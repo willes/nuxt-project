@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "server":"node .output/server/index.mjs"
+    "server": "node .output/server/index.mjs"
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.6",
@@ -26,7 +26,7 @@
     "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/proxy": "^2.1.0",
     "axios": "^1.6.1",
-    "chimee-player": "^1.4.9",
+    "nprogress": "^0.2.0",
     "nsplayer": "^0.7.0"
   }
 }

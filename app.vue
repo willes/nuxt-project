@@ -14,6 +14,9 @@
   opacity: 0;
   filter: blur(1rem);
 }
+#nprogress .bar {
+    background: #22C55E !important; 
+ }
 </style>
 <script setup>
 useHead({
