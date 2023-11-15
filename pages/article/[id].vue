@@ -67,7 +67,7 @@
    per_page: 0,
    total: 0
  })
- const page = ref(pageId?.match?.(/pp(\d+)/)?.[1] || 1)
+ const page = ref(+(pageId?.match?.(/pp(\d+)/)?.[1]) || 1)
  const pageIndexPrex = '76-0'
  async function fetchData() {
    const paramId = pageId === '1' ? pageIndexPrex :  pageId
