@@ -15,6 +15,12 @@ export default defineNuxtConfig({
       //在此处添加
       { name: 'referrer', content: 'no-referrer' },
     ]
+  },
+  routeRules: {
+    // 为了SEO目的，在构建时生成
+    '/': { prerender: true },
+    // 缓存1小时
+    '/api/*': { cache: { maxAge: 60 * 60 } }
   }
   },
   // nitro: {

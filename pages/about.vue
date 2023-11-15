@@ -37,16 +37,13 @@ async function fetchData (){
   const { data } = await useFetch(
   `/api/detail?video_library_id=${video_library_id}`
 ); // https://front-gateway.mtime.com/ticket/schedule/showing/movies.api?locationId=290
- detail.value =  data.value?.data
- console.log('%c [ data ]-26', 'font-size:13px; background:#a2a819; color:#e6ec5d;', data)
-
-
+ detail.value =  data.value?.data || {}
 }
 await fetchData()
 
 useSeoMeta({
-  title:detail.value.title,
-  ogTitle:detail.value.title,
+  title:detail.value?.title,
+  ogTitle:detail.value?.title,
   description: '这是我的神奇网站，让我来告诉你关于它的一切。',
   ogDescription: '这是我的神奇网站，让我来告诉你关于它的一切。',
   ogImage: 'https://example.com/image.png',
