@@ -5,6 +5,16 @@
 </template>
 
 <style>
+html, body,#__nuxt{
+  height: 100%;
+}
+#__nuxt {
+  display: flex;
+  flex-direction: column;
+}
+.flex-grow {
+  flex-grow: 1;
+}
 .page-enter-active,
 .page-leave-active {
   transition: all 0.15s;
