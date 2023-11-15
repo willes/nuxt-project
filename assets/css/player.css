@@ -1,0 +1,591 @@
+@keyframes my-face {
+    2% {
+        transform: translateY(1.5px) rotate(1.5deg)
+    }
+
+    4% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+    }
+
+    6% {
+        transform: translateY(1.5px) rotate(-1.5deg)
+    }
+
+    8% {
+        transform: translateY(-1.5px) rotate(-1.5deg)
+    }
+
+    10% {
+        transform: translateY(2.5px) rotate(1.5deg)
+    }
+
+    12% {
+        transform: translateY(-.5px) rotate(1.5deg)
+    }
+
+    14% {
+        transform: translateY(-1.5px) rotate(1.5deg)
+    }
+
+    16% {
+        transform: translateY(-.5px) rotate(-1.5deg)
+    }
+
+    18% {
+        transform: translateY(.5px) rotate(-1.5deg)
+    }
+
+    20% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+    }
+
+    22% {
+        transform: translateY(.5px) rotate(-1.5deg)
+    }
+
+    24% {
+        transform: translateY(1.5px) rotate(1.5deg)
+    }
+
+    26% {
+        transform: translateY(.5px) rotate(.5deg)
+    }
+
+    28% {
+        transform: translateY(.5px) rotate(1.5deg)
+    }
+
+    30% {
+        transform: translateY(-.5px) rotate(2.5deg)
+    }
+
+    32% {
+        transform: translateY(1.5px) rotate(-.5deg)
+    }
+
+    34% {
+        transform: translateY(1.5px) rotate(-.5deg)
+    }
+
+    36% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+    }
+
+    38% {
+        transform: translateY(1.5px) rotate(-1.5deg)
+    }
+
+    40% {
+        transform: translateY(-.5px) rotate(2.5deg)
+    }
+
+    42% {
+        transform: translateY(2.5px) rotate(-1.5deg)
+    }
+
+    44% {
+        transform: translateY(1.5px) rotate(.5deg)
+    }
+
+    46% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+    }
+
+    48% {
+        transform: translateY(-.5px) rotate(.5deg)
+    }
+
+    50% {
+        transform: translateY(.5px) rotate(.5deg)
+    }
+
+    52% {
+        transform: translateY(2.5px) rotate(2.5deg)
+    }
+
+    54% {
+        transform: translateY(-1.5px) rotate(1.5deg)
+    }
+
+    56% {
+        transform: translateY(2.5px) rotate(2.5deg)
+    }
+
+    58% {
+        transform: translateY(.5px) rotate(2.5deg)
+    }
+
+    60% {
+        transform: translateY(2.5px) rotate(2.5deg)
+    }
+
+    62% {
+        transform: translateY(-.5px) rotate(2.5deg)
+    }
+
+    64% {
+        transform: translateY(-.5px) rotate(1.5deg)
+    }
+
+    66% {
+        transform: translateY(1.5px) rotate(-.5deg)
+    }
+
+    68% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+    }
+
+    70% {
+        transform: translateY(1.5px) rotate(.5deg)
+    }
+
+    72% {
+        transform: translateY(2.5px) rotate(1.5deg)
+    }
+
+    74% {
+        transform: translateY(-.5px) rotate(.5deg)
+    }
+
+    76% {
+        transform: translateY(-.5px) rotate(2.5deg)
+    }
+
+    78% {
+        transform: translateY(-.5px) rotate(1.5deg)
+    }
+
+    80% {
+        transform: translateY(1.5px) rotate(1.5deg)
+    }
+
+    82% {
+        transform: translateY(-.5px) rotate(.5deg)
+    }
+
+    84% {
+        transform: translateY(1.5px) rotate(2.5deg)
+    }
+
+    86% {
+        transform: translateY(-1.5px) rotate(-1.5deg)
+    }
+
+    88% {
+        transform: translateY(-.5px) rotate(2.5deg)
+    }
+
+    90% {
+        transform: translateY(2.5px) rotate(-.5deg)
+    }
+
+    92% {
+        transform: translateY(.5px) rotate(-.5deg)
+    }
+
+    94% {
+        transform: translateY(2.5px) rotate(.5deg)
+    }
+
+    96% {
+        transform: translateY(-.5px) rotate(1.5deg)
+    }
+
+    98% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+    }
+
+    0%,
+    to {
+        transform: translate(0) rotate(0deg)
+    }
+}
+
+.xpcplayer,
+body.speed-modal-lock {
+    overflow: hidden
+}
+
+.xpcplayer {
+    background-color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    height: 100%;
+    line-height: 1;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.xpcplayer button {
+    -moz-appearance: button;
+    appearance: button;
+    -webkit-appearance: button;
+    background-color: initial;
+    background-image: none;
+    border: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-transform: none
+}
+
+.xpcplayer a {
+    text-decoration: none
+}
+.xpcplayer-controller {
+    display: flex;
+    height: 48px;
+    left: 0;
+    right: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.xpcplayer .xpcplayer-controller-center-play {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 9999px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+    color: #fff;
+    height: 48px;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .25s ease;
+    width: 48px;
+    z-index: 2
+}
+
+.xpcplayer .xpcplayer-controller-center-play:hover {
+    background-color: rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .15), 0 1px 10px rgba(0, 0, 0, .1)
+}
+
+.xpcplayer .xpcplayer-controller-center-play:hover svg {
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .4))
+}
+
+.xpcplayer .xpcplayer-controller-center-play:active {
+    background-color: rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .12), 0 1px 16px rgba(0, 0, 0, .05)
+}
+
+.xpcplayer .xpcplayer-controller-center-play:active svg {
+    filter: drop-shadow(0 1px 8px rgba(0, 0, 0, .4));
+    transform: scale(1.05)
+}
+
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon:focus-visible {
+    outline: none
+}
+
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon .xpcplayer-icon-content {
+    display: none;
+    margin: 13px
+}
+
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon .xpcplayer-icon-content.play {
+    transform: translateX(2px)
+}
+
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon.pause:hover .xpcplayer-icon-content.pause,
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon.play:hover .xpcplayer-icon-content.play,
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon.replay:hover .xpcplayer-icon-content.replay {
+    opacity: 1
+}
+
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon.pause .xpcplayer-icon-content.pause,
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon.play .xpcplayer-icon-content.play,
+.xpcplayer .xpcplayer-controller-center-play button.xpcplayer-center-play-icon.replay .xpcplayer-icon-content.replay {
+    display: block;
+    opacity: .8
+}
+
+.xpcplayer .xpcplayer-wrap {
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-limit {
+    pointer-events: none
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-limit .xpcplayer-controller-center-play {
+    display: none
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-vip .xpcplayer-icon-vip {
+    display: none !important
+}
+
+.xpcplayer .xpcplayer-wrap * {
+    box-sizing: content-box
+}
+
+.xpcplayer .xpcplayer-wrap i {
+    font-style: normal
+}
+
+.xpcplayer .xpcplayer-wrap svg {
+    fill: currentColor;
+    height: 100%;
+    transition: all .3s ease;
+    width: 100%
+}
+
+.xpcplayer .xpcplayer-wrap .dn {
+    display: none !important
+}
+
+.xpcplayer .xpcplayer-wrap:-webkit-full-screen {
+    background: #000;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    transform: translate(0);
+    width: 100%;
+    z-index: 100000
+}
+
+.xpcplayer .xpcplayer-wrap:-webkit-full-screen .xpcplayer-danmaku-ground {
+    font-size: 24px
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-danmaku-active .xpcplayer-controller .xpcplayer-icons.xpcplayer-icons-center .xpcplayer-danmaku .xpcplayer-danmaku-toggle {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: #e74b3b
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-danmaku-active .xpcplayer-controller .xpcplayer-icons.xpcplayer-icons-center .xpcplayer-danmaku .xpcplayer-danmaku-toggle:hover:after {
+    color: #1a1a1a
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-danmaku-active .xpcplayer-controller .xpcplayer-icons.xpcplayer-icons-center .xpcplayer-danmaku .xpcplayer-danmaku-toggle:after {
+    background-color: #fff;
+    color: #e74b3b;
+    left: 12px
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-no-danmaku .xpcplayer-danmaku,
+.xpcplayer .xpcplayer-wrap.xpcplayer-no-danmaku.xpcplayer-middle .xpcplayer-danmaku-icon {
+    display: none !important
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-no-danmaku .xpcplayer-controller .xpcplayer-icons .xpcplayer-setting .xpcplayer-setting-box {
+    width: 200px
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-live .xpcplayer-bar-wrap,
+.xpcplayer .xpcplayer-wrap.xpcplayer-live .xpcplayer-setting-loop,
+.xpcplayer .xpcplayer-wrap.xpcplayer-live .xpcplayer-setting-speed,
+.xpcplayer .xpcplayer-wrap.xpcplayer-live .xpcplayer-time,
+.xpcplayer .xpcplayer-wrap.xpcplayer-live.xpcplayer-no-danmaku .xpcplayer-setting,
+.xpcplayer .xpcplayer-wrap.xpcplayer-no-danmaku .xpcplayer-controller .xpcplayer-icons .xpcplayer-comment,
+.xpcplayer .xpcplayer-wrap.xpcplayer-no-danmaku .xpcplayer-controller .xpcplayer-icons .xpcplayer-setting .xpcplayer-setting-box .xpcplayer-setting-danmaku,
+.xpcplayer .xpcplayer-wrap.xpcplayer-no-danmaku .xpcplayer-controller .xpcplayer-icons .xpcplayer-setting .xpcplayer-setting-box .xpcplayer-setting-danunlimit,
+.xpcplayer .xpcplayer-wrap.xpcplayer-no-danmaku .xpcplayer-controller .xpcplayer-icons .xpcplayer-setting .xpcplayer-setting-box .xpcplayer-setting-showdan,
+.xpcplayer .xpcplayer-wrap.xpcplayer-no-danmaku .xpcplayer-danmaku-ground {
+    display: none
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-arrow .xpcplayer-danmaku {
+    font-size: 18px
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-arrow .xpcplayer-icon {
+    margin: 0 -3px
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-playing .xpcplayer-danmaku-ground .xpcplayer-danmaku-move {
+    animation-play-state: running
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-loading .xpcplayer-bezel .xpcplayer-loading-icon {
+    display: block
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-loading .xpcplayer-danmaku,
+.xpcplayer .xpcplayer-wrap.xpcplayer-loading .xpcplayer-danmaku-move,
+.xpcplayer .xpcplayer-wrap.xpcplayer-paused .xpcplayer-danmaku,
+.xpcplayer .xpcplayer-wrap.xpcplayer-paused .xpcplayer-danmaku-move {
+    animation-play-state: paused
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-hide-controller.xpcplayer-controls {
+    cursor: none
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-hide-controller .xpcplayer-danmaku-ground .xpcplayer-danmaku-pos-bottom {
+    transform: translate(-50%) !important
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-hide-controller .xpcplayer-controller-mask {
+    opacity: 0;
+    transform: translateY(100%)
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-hide-controller .xpcplayer-controller {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(140%)
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-show-controller .xpcplayer-controller,
+.xpcplayer .xpcplayer-wrap.xpcplayer-show-controller .xpcplayer-controller-mask {
+    opacity: 1
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-fulled {
+    height: 100% !important;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100% !important;
+    z-index: 100000
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-fullscreen .xpcplayer-danmaku-ground {
+    font-size: 24px
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-fullscreen .xpcplayer-danmaku-ground .xpcplayer-danmaku-pos-bottom {
+    transform: translate(-50%, -70px)
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-fullscreen.xpcplayer-hide-controller .xpcplayer-danmaku-ground .xpcplayer-danmaku-pos-bottom {
+    transform: translate(-50%)
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-fullscreen .xpcplayer-controller {
+    height: 60px
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-fullscreen .xpcplayer-controller .xpcplayer-controller-bar {
+    display: flex;
+    flex: 1 1 auto;
+    height: 100%;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.xpcplayer .xpcplayer-wrap.xpcplayer-fullscreen .xpcplayer-controller .xpcplayer-bar-wrap {
+    bottom: 60px;
+
+}
+.xpcplayer-info-panel {
+    align-items: stretch;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: rgba(28,28,28,.6);
+    border-radius: 2px;
+    box-shadow: 0 0 3px rgba(28,28,28,.8);
+    color: #fff;
+    display: flex;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    justify-content: stretch;
+    left: 10px;
+    max-height: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    width: 420px;
+    z-index: 2;
+}
+.xpcplayer-controller .xpcplayer-icons .xpcplayer-icon.xpcplayer-quality-icon {
+    background-color: rgba(31,37,42,.8);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    height: 24px;
+    line-height: 22px;
+    line-height: 24px;
+    margin-left: 0;
+    min-width: 54px;
+    padding: 0 10px;
+    transition: all .25s ease;
+    width: auto;
+}
+.xpcplayer-controller .xpcplayer-bar-wrap .xpcplayer-bar {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.xpcplayer-controller, .xpcplayer-controller-mask {
+    bottom: 0;
+    position: absolute;
+    transition: all .2s ease;
+}
+
+.xpcplayer-video-wrap video {
+    height: 100%;
+    width: 100%;
+}
+
+.xpcplayer-controller .xpcplayer-icons.xpcplayer-icons-play .xpcplayer-play-icon {
+    color: #fff;
+    height: 52px;
+    position: relative;
+    top: -4px;
+    transition: all .25s ease;
+    width: 72px;
+}
+.xpcplayer-controller .xpcplayer-icons .xpcplayer-icon {
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    outline: none;
+    vertical-align: middle;
+    width: 40px;
+}
+.xpcplayer-controller .xpcplayer-icons.xpcplayer-icons-play .xpcplayer-play-icon>svg {
+    fill: #1f252a;
+    fill-opacity: .796684;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.xpcplayer-controller .xpcplayer-icons.xpcplayer-icons-play {
+    margin-left: 24px;
+    position: relative;
+    top: -8px;
+}
+.xpcplayer-controller .xpcplayer-icons {
+    bottom: 0;
+    height: 100%;
+}
