@@ -74,6 +74,7 @@ import "nprogress/nprogress.css";
 import { ref, onMounted } from "vue";
 import { ElMessage } from "element-plus";
 NProgress.configure({ showSpinner: false });
+const isClient = process.client
 const route = useRoute();
 const pageId = route.params?.id + "";
 const movieList = ref([]);
@@ -82,24 +83,23 @@ const articleData = ref({
   total: 0,
 });
 const page = ref(+pageId?.match?.(/pp(\d+)/)?.[1] || 1);
-const pageIndexPrex = "76-0";
+const pageIndexPrex = "9999-0";
 async function fetchData() {
-  process.client && NProgress.start();
+  isClient && NProgress.start();
   const paramId = pageId === "1" ? pageIndexPrex : pageId;
   const { data, error } = await useFetch("/api/article", {
     query: {
       param: paramId,
     },
   });
-
   if (error.value) {
-    ElMessage.error("接口出错啦!");
+    isClient && ElMessage.error("接口出错啦!");
   } else {
     const { discoverArticleData } = data?.value?.pageProps || {};
     movieList.value = discoverArticleData?.list || [];
-    articleData.value = discoverArticleData;
+    articleData.value = discoverArticleData || {};
   }
-  process.client && NProgress.done();
+  isClient && NProgress.done();
 }
 
 watch(page, (newVal) => {
