@@ -77,12 +77,12 @@ NProgress.configure({ showSpinner: false });
 const isClient = process.client
 const route = useRoute();
 const pageId = route.params?.id + "";
-const movieList = ref([]);
+const movieList = ref<Array<Record<string, any>>>([]);
 const articleData = ref({
   per_page: 0,
   total: 0,
 });
-const page = ref(+pageId?.match?.(/pp(\d+)/)?.[1] || 1);
+const page = ref(+pageId?.match?.(/pp(\d+)/)?.[1] || 1) 
 const pageIndexPrex = "article-0-0";
 async function fetchData() {
   isClient && NProgress.start();
@@ -112,10 +112,10 @@ watch(page, (newVal) => {
     path: "/article/" + id,
   });
 });
-const categories = (categories) => {
+const categories = (categories: []) => {
   var category_names = [];
   for (var i = 0; i < categories.length; i++) {
-    const item = categories[i];
+    const item = categories[i] as Record<string, any>;
     var category_name = item.category_name + "-" + item.sub.category_name;
     category_names.push(category_name);
   }

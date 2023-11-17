@@ -28,7 +28,7 @@ useHead({
 })
 const route = useRoute()
 const video_library_id = route.query?.video_library_id || ''
-const detail = ref({
+const detail = ref<any>({
   resource: {
     progressive: []
   }
