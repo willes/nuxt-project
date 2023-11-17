@@ -83,16 +83,17 @@ const articleData = ref({
   total: 0,
 });
 const page = ref(+pageId?.match?.(/pp(\d+)/)?.[1] || 1);
-const pageIndexPrex = "9999-0";
+const pageIndexPrex = "article-0-0";
 async function fetchData() {
   isClient && NProgress.start();
-  const paramId = pageId === "1" ? pageIndexPrex : pageId;
+  const paramId = pageId === "1" ? 'article' : pageId;
   const { data, error } = await useFetch("/api/article", {
     query: {
       param: paramId,
     },
   });
   if (error.value) {
+
     isClient && ElMessage.error("接口出错啦!");
   } else {
     const { discoverArticleData } = data?.value?.pageProps || {};
